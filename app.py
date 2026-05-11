@@ -11,7 +11,7 @@ def home():
 @app.route('/page2')
 def page2():
       return """
-    <p>another page<p>
+    <p>another page</p>
     <button onclick="window.location.href='/'">
     go to home
     </button>
