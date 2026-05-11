@@ -4,7 +4,7 @@ app=Flask(__name__)
 def home():
     return """
     <p>hello ! deocker executed successfully<p>
-    <button onclick='windows.location.href='/page2'">
+    <button onclick="window.location.href='/page2'">
     go to second page
     </button>
     """
@@ -12,10 +12,10 @@ def home():
 def page2():
       return """
     <p>another page<p>
-    <button onclick='windows.location.href='/'">
+    <button onclick="window.location.href='/'">
     go to home
     </button>
     """
   
 if __name__=="__main__":
-    app.run(host='0.0.0.0',port=5003)
+    app.run(host='0.0.0.0',port=5003,debug=True)
