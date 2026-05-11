@@ -13,8 +13,8 @@ pipeline{
     }
     stage('login'){
       steps{
-        withCreadentials([usernamePassword(
-          creadentialsId:'creadential',
+        withCredentials([usernamePassword(
+          credentialsId:'creadential',
           usernameVariable:'USER',
           passwordVariable:'PASS'
           )]){
